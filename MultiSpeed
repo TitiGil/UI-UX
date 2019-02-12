@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    html, body{
+        margin: 0;
+        padding: 0;
+        background: darkblue;
+      
+        
+    }
+    .container{
+     
+  width: 100%;
+  height: 800px;
+        text-align: center;
+        background-color: red;
+        position: relative;
+
+    
+    }
+    .test{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+       position: fixed;
+       top: 20%;
+    
+    }
+    .test.test2{
+        padding-top: 20%;
+        margin-left: auto;
+    }
+    .cc{
+        width: 100%;
+        height: 800px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container" id="tt1">
+
+    <div class="test test1" id="t1"> 
+        <h1>Test speed one</h1>
+    </div>
+    <div class="test test2" id="t2">
+        <h3>test speed 2</h3>
+    </div>
+</div>
+<div class="cc" id="tt2">
+
+</div>
+<script>
+var cc=document.body;
+window.scrollbars.visible=false;
+var t1=document.getElementById('t1'),
+t2=document.getElementById('t2');
+    
+
+
+document.body.onscroll=function(){
+var temp= window.getComputedStyle(t1,null).getPropertyValue("height");
+temp=temp.replace("px","");
+console.log();
+t1.style.top=Number.parseInt(temp)-(Math.round(window.scrollY/(5)))+"px";
+t2.style.top=Number.parseInt(temp)-(Math.round(window.scrollY/(2)))+"px";
+
+
+
+
+}
+
+
+
+
+</script>
+</body>
+</html>

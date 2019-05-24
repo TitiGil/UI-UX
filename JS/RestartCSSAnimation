@@ -40,7 +40,9 @@
           //Applying a reflow
            document.getElementById("a").offsetHeight;
         
-        //the last part set animatiokn to null cause the element applied by animation again
+         //the last part set the animation to null cause the element applied by animation again
+        //, in fact, the null value set it to default that is the specified animation 
+        // it can be substituted by "" 
         document.getElementById("a").style.animation= null;
         document.getElementById("a").style.animation = null;
 

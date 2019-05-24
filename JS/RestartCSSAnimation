@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <style>
+     div.a{
+         background: yellow;
+            animation-name: aa;
+            animation-direction: alternate;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-fill-mode: both   ;
+            animation-play-state: running;
+            color:white;
+     }
+
+    @keyframes  aa{
+        0%{
+            background: red;
+        }
+
+        100%{
+           background: blue;
+        }
+     }
+
+  </style>
+</head>
+
+<body>
+
+    <script >
+          function start(){
+            //Set Animation to none 
+            document.getElementById("a").style.animation= "none";
+            document.getElementById("a").style.animation = "none";
+          
+          //Applying a reflow
+           document.getElementById("a").offsetHeight;
+        
+        //the last part set animatiokn to null cause the element applied by animation again
+        document.getElementById("a").style.animation= null;
+        document.getElementById("a").style.animation = null;
+
+
+
+                        }
+                  </script>
+                  <div class="a" id="a">
+                      <h1> test name </h1>
+                      <button onclick="start()">
+                          Start
+                      </button>
+                  </div>
+
+</body>
+
+</html>

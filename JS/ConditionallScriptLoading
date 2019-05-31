@@ -1,0 +1,10 @@
+  <script>
+      
+      if (window.matchMedia("(min-width: 700px)").matches){
+         console.log("bigger than 570"); 
+          
+            document.write("<script type='text/javascript' src='./js/scroljs.js'><\/script>");
+       }
+      
+    
+    </script>

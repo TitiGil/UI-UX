@@ -1,0 +1,11 @@
+To Disable scrollBar for Chrome and Mozilla add this to css for the ELEMENT
+
+
+ELEMENT::-webkit-scrollbar{
+    width: 0px;
+    display: none;
+
+}
+ELEMENT{
+ scrollbar-width:none;
+}

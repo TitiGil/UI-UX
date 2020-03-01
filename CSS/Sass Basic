@@ -1,0 +1,44 @@
+# variable creation 
+
+$variableName : value;
+
+# mixin create like function nad use with @include
+
+@mixin mixinName($arg1,$arg2){
+ .class{
+      color : $arg1;
+ }
+}
+
+
+body{
+  @include mixinName(red,green);
+}
+
+#array 
+$arrayName : ( red,green,blue);
+
+#For loop $var from start to end 
+  @for $i from 1 through 4
+  
+#each loop $var in $array
+@each $val in $arrayName
+
+
+
+#while loop  @while condistion
+  @while $val <10 
+
+#condition
+@if ( a>10)
+@else 
+
+
+@debug to write something in debug mode(transforming from scss to css)
+
+
+#using a variable inside the code 
+ body{
+  .class-#{$variable}
+ }
+

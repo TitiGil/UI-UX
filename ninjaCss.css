@@ -1,1 +1,32 @@
 
+nf-fields-wrap {
+
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+
+}
+
+nf-field{
+    
+   
+	margin: 0 0 0 10px;
+
+	display: flex;
+	flex-direction: column;
+	/* vertical-align: sub; */
+	justify-content: flex-start;
+
+}
+
+
+@media only screen and (max-width: 976px) {
+    nf-fields-wrap {
+	grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    nf-fields-wrap {
+	grid-template-columns: auto;
+    }
+}
